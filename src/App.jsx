@@ -1,4 +1,4 @@
-import { Blog } from "./components/Blog";
+import Blog from "./components/Blog";
 import Experiences from "./components/Experiences";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
