@@ -28,20 +28,20 @@ const listOfReview = [
   },
 ];
 
-const Review = ({ key, description, place, imageUrl, price }) => {
+const Review = ({ description, place, imageUrl, price }) => {
   return (
     <div>
       {/* Content */}
 
-      <div className="py-4" key={key}>
+      <div className="py-4">
         {/* Image */}
         <img
           src={imageUrl}
           alt={place}
-          className="rounded-t-2xl sm:w-[248px] lg:h-[286px] lg:w-[438px] sm:aspect-square "
+          className="rounded-t-3xl h-[286px] w-full"
         />
         <div>
-          <div className="rounded-b-2xl px-4 py-4 bg-[#FFF8F1] ">
+          <div className="rounded-b-3xl px-4 py-4 bg-[#FFF8F1] ">
             {/* Location */}
             <h4 className="tracking-wide font-sans text-gray-500 sm:text-2xl text-3xl font-light">
               {place}
@@ -80,29 +80,66 @@ const Review = ({ key, description, place, imageUrl, price }) => {
 
 const Offer = () => {
   return (
-    <div>
+    <div className="my-6">
       {/* Container */}
       <div className=" max-w-screen-xl mx-auto px-4">
         {/* Layout */}
         <div>
           <div>
-            {/* Title */}
-            <div className="flex flex-col sm:justify-start md:justify-end ">
-              <h3 className=" font-body font-thin text-4xl pb-4">
-                Special Offer
-              </h3>
-              <hr className=" sm:mr-0 md:ml-0 h-1 bg-orange-500 sm:w-44 w-[241px]" />
-            </div>
+            <div className="flex sm:flex-row-reverse justify-between items-end">
+              {/* Title */}
+              <div className="sm:text-right">
+                <h3 className=" font-body font-thin text-6xl mb-4">
+                  Special Offer
+                </h3>
+                <hr className=" w-4/5 h-1 my-4 bg-orange-500 border-0 rounded md:my-10  " />
 
-            {/* Desciption */}
-            <div>
-              <p className="py-6 text-gray-500">
-                Check out our special offer and discounts{" "}
-              </p>
+                <p className="py-6 text-gray-500">
+                  Check out our special offer and discounts{" "}
+                </p>
+              </div>
+
+              {/* Slider Button */}
+              <div className="hidden md:flex sm:justify-center gap-8 my-6">
+                <button className="aspect-square rounded-2xl bg-black tracking-wide border-none font-medium uppercase text-lg px-6 my-3">
+                  <svg
+                    width="12"
+                    height="22"
+                    viewBox="0 0 12 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1.00012L1 11.0001L11 21.0001"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button className="aspect-square rounded-2xl bg-orange-500 tracking-wide border-none font-medium uppercase text-lg px-6 my-3">
+                  <svg
+                    width="12"
+                    height="22"
+                    viewBox="0 0 12 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 21.0001L11 11.0001L0.999999 1.00012"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-
-          <div className="grid sm:grid-cols-1 lg:grid-cols-3 lg:gap-4">
+          {/* Description */}
+          <div className="grid lg:grid-cols-3 lg:gap-6">
             {listOfReview.map((review, id) => {
               return (
                 <Review
@@ -118,7 +155,7 @@ const Offer = () => {
 
           <div>
             {/* Slider */}
-            <div className="flex sm:justify-center gap-8 my-6">
+            <div className="flex md:hidden justify-center gap-8 my-6">
               <button className="aspect-square rounded-2xl bg-black tracking-wide border-none font-medium uppercase text-lg px-6 my-3">
                 <svg
                   width="12"
