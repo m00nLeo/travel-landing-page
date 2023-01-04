@@ -21,7 +21,7 @@ const HeroContentBox = ({ type, info, title, placeholder }) => {
 
 const Hero = () => {
   return (
-    <div className="relative text-white bg-cover bg-no-repeat bg-bottom bg-[url(https://images.unsplash.com/photo-1597339801934-bfb6a88b0010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80)]">
+    <div className="relative text-white bg-cover bg-no-repeat bg-bottom lg:h-screen bg-[url(https://images.unsplash.com/photo-1597339801934-bfb6a88b0010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80)]">
       <div className="absolute opacity-25 inset-0 bg-slate-300/75 sm:bg-gradient-to-r sm:from-black/75 sm:to-black"></div>
       {/* Navbar */}
       <div className="mx-auto max-w-screen-xl relative flex gap-2 px-8 py-9">
@@ -29,13 +29,13 @@ const Hero = () => {
       </div>
 
       {/* Hero */}
-      <div className="relative mx-auto max-w-screen-xl px-4 md:px-0 py-48 ">
+      <div className="relative mx-auto max-w-screen-xl px-4 md:px-0 py-32 ">
         {/* Title */}
         <div className="px-8 2xl:px-10 mb-32 font-extralight font-serif ">
-          <h2 className="text-5xl mb-4">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl mb-4">
             Strart your unforgettable journey with us.
           </h2>
-          <p className="text-base">
+          <p className="text-base md:text-lg lg:text-xl">
             The best travel for your journey begins now
           </p>
         </div>
@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
           <a
             href="#"
-            className="flex items-center px-4 py-8 gap-4 bg-orange-600/75 rounded-b-lg font-serif text-white text-2xl font-light md:rounded-bl-none md:rounded-r-xl"
+            className="flex items-center px-4 py-8 gap-4 bg-[#FF7757] rounded-b-lg font-serif text-white text-2xl font-light md:rounded-bl-none md:rounded-r-xl"
           >
             Book <br className="hidden md:flex" /> Now{" "}
             <span>

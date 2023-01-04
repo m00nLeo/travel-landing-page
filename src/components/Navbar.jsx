@@ -25,7 +25,7 @@ const NavMenu = () => {
         <li className="hover:border-b-red-500 hover:border-b-2 rounded-lg">
           <a href="#"> Login </a>
         </li>
-        <li className="hover:border-b-red-500 hover:border-b-2 rounded-lg lg:btn lg:btn-warning">
+        <li className="hover:border-b-red-500 hover:border-b-1 rounded-lg lg:px-8 lg:py-5 lg:bg-[#FF7757]  ">
           <a href="#"> Sign up</a>
         </li>
       </div>
