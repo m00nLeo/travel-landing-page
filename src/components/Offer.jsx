@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 
 const Offer = () => {
@@ -5,3 +6,14 @@ const Offer = () => {
 };
 
 export default Offer;
+=======
+import React from 'react'
+
+const Offer = () => {
+  return (
+    <div>Offer</div>
+  )
+}
+
+export default Offer
+>>>>>>> main
