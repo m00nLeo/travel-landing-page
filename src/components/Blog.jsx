@@ -18,7 +18,7 @@ const Blog = () => {
             alt="Berlin"
           />
         </div>
-        <div className="w-full">
+        <div className="w-full mt-10">
           <h2 className="text-5xl font-light tracking-wider font-serif leading-10">
             Beautiful Italy
           </h2>
