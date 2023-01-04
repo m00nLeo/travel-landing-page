@@ -2,7 +2,7 @@ import React from "react";
 
 const Popular = () => {
   return (
-    <div className="my-20 mx-4 md:mx-[80px]">
+    <div className="my-20 mx-auto max-w-screen-xl">
       <div className="mb-10">
         <h1 className="font-serif text-[#172432] mb-6 text-5xl font-extralight">
           Popular Destinations
