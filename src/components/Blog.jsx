@@ -1,5 +1,3 @@
-import React from "react";
-
 const Blog = () => {
   return (
     <div className="my-20 mx-4 md:mx-[80px]">

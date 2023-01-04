@@ -1,5 +1,3 @@
-import React from "react";
-
 const Gallery = () => {
   return (
     <div className="my-20 mx-4 md:mx-[80px]">
@@ -102,4 +100,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
