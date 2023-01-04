@@ -41,13 +41,13 @@ const StarIcon = () => {
 const Tour = ({ place, price, imageUrl }) => {
   return (
     <>
-      <div className="mb-10 group">
+      <div className="mb-10 group lg:hover:-translate-y-12 lg:hover:overflow-visible">
         <img
           src={imageUrl}
           alt={place}
-          className="w-full md:w-screen sm:w-[288px] h-[320px] md:h-[350px] rounded-3xl mb-4 object-cover"
+          className="w-full md:w-screen sm:w-[288px] h-[320px] md:h-[350px] lg:h-[399px] rounded-3xl my-12 object-cover"
         />
-        <div className="lg:hidden lg:group-hover:block ">
+        <div className="lg:hidden lg:group-hover:block">
           <div className="font-sans flex justify-between mb-3">
             <p className=" uppercase">Guided Tour</p>
             <p>€{price}/Day</p>
@@ -79,16 +79,16 @@ const Trip = () => {
         {/* Layout */}
         <div className="flex justify-between">
           {/* Content */}
-          <div className="grid lg:grid-cols-5 xl:grid-cols-6 gap-6">
+          <div className="grid lg:grid-cols-5 xl:grid-cols-6 gap-6 lg:gap-8">
             {/* Intro-part */}
-            <div className="lg:col-span-2 xl:grid-cols-2 md:right-0 md:pr[50%]">
+            <div className="lg:col-span-2 xl:grid-cols-2 md:right-0 md:pr[50%] py-8">
               {/* Title */}
               <h3 className="font-body font-thin text-5xl mb-4  ">
                 Trip Planners
               </h3>
 
               <hr className=" w-3/5 h-1 my-4 bg-orange-500 border-0 rounded md:my-10  " />
-              <p className="py-6 text-gray-500 text-lg text-justify">
+              <p className="py-6 text-gray-500 text-lg text-justify lg:pr-6">
                 20 years from now you will be more disappointed by the things
                 that you didn’t do. Stop regretting and start travelling, start
                 throwing off the bowlines.
