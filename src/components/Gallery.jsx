@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react'
 
 const Gallery = () => {
@@ -7,3 +8,12 @@ const Gallery = () => {
 }
 
 export default Gallery
+=======
+import React from "react";
+
+const Gallery = () => {
+  return <div>Gallery</div>;
+};
+
+export default Gallery;
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react'
 
 const Navbar = () => {
@@ -7,3 +8,12 @@ const Navbar = () => {
 }
 
 export default Navbar
+=======
+import React from "react";
+
+const Navbar = () => {
+  return <div>Navbar</div>;
+};
+
+export default Navbar;
+>>>>>>> Stashed changes

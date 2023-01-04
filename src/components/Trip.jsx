@@ -1,5 +1,3 @@
-import StarIcon from "../../public/StarIson";
-
 const dataList = [
   {
     place: "Rome City Tour",
@@ -21,31 +19,52 @@ const dataList = [
   },
 ];
 
+const StarIcon = () => {
+  return (
+    <div>
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z"
+          fill="#FFC107"
+        />
+      </svg>
+    </div>
+  );
+};
+
 const Tour = ({ place, price, imageUrl }) => {
   return (
     <>
-      <div className="mb-10">
+      <div className="mb-10 group">
         <img
           src={imageUrl}
           alt={place}
           className="w-full md:w-screen sm:w-[288px] h-[320px] md:h-[350px] rounded-3xl mb-4 object-cover"
         />
-        <div className="font-sans flex justify-between mb-3">
-          <p className=" uppercase">Guided Tour</p>
-          <p>€{price}/Day</p>
-        </div>
-        <h5 className="font-serif text-3xl tracking-tight font-medium mb-3">
-          {place}
-        </h5>
-        <div className="flex justify-between pb-6">
-          <div className="flex gap-1">
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
+        <div className="lg:hidden lg:group-hover:block ">
+          <div className="font-sans flex justify-between mb-3">
+            <p className=" uppercase">Guided Tour</p>
+            <p>€{price}/Day</p>
           </div>
-          <p>7 Days tour</p>
+          <h5 className="font-serif text-3xl tracking-tight font-medium mb-3">
+            {place}
+          </h5>
+          <div className="flex justify-between pb-6">
+            <div className="flex gap-1">
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </div>
+            <p>7 Days tour</p>
+          </div>
         </div>
       </div>
     </>
