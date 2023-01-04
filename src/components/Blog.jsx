@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 
 const Blog = () => {
@@ -21,7 +20,7 @@ const Blog = () => {
             alt="Berlin"
           />
         </div>
-        <div className="w-full mt-10">
+        <div className="w-full">
           <h2 className="text-5xl font-light tracking-wider font-serif leading-10">
             Beautiful Italy
           </h2>
@@ -62,14 +61,3 @@ const Blog = () => {
 };
 
 export default Blog;
-=======
-import React from 'react'
-
-const Blog = () => {
-  return (
-    <div>Blog</div>
-  )
-}
-
-export default Blog
->>>>>>> main
