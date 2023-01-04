@@ -1,3 +1,4 @@
+
 const Gallery = () => {
   return (
     <div className="my-20 mx-auto max-w-screen-xl">

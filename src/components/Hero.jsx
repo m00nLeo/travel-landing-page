@@ -1,4 +1,3 @@
-
 import Navbar from "./Navbar";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -72,4 +71,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
