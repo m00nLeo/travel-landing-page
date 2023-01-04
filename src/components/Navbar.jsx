@@ -1,3 +1,4 @@
+
 import { SiYourtraveldottv } from "react-icons/si";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -63,4 +64,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
