@@ -1,7 +1,6 @@
-import Blog from "./components/Blog";
+import { Blog } from "./components/Blog";
 import Experiences from "./components/Experiences";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Offer from "./components/Offer";
@@ -11,15 +10,14 @@ import Trip from "./components/Trip";
 const App = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
+      <Navbar />
+      <Hero />
       <Popular />
+      <Offer />
       <Blog />
-      <Gallery />
-      {/* <Offer /> */}
-      {/* <Trip /> */}
-      {/* <Experiences /> */}
-      {/* <Footer /> */}
+      <Trip />
+      <Experiences />
+      <Footer />
     </div>
   );
 };
