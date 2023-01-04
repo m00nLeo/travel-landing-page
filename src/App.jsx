@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Offer from "./components/Offer";
 import Popular from "./components/Popular";
 import Trip from "./components/Trip";
+import Nav from "./components/Nav";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Trip />
       <Experiences />
       <Footer />
+      <Nav /> 
     </div>
   );
 };
