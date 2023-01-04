@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       display: ["group-hover"],
+      fontFamily: {
+        body: "Playfair Display",
+      },
     },
   },
   plugins: [require("daisyui")],
