@@ -1,3 +1,4 @@
+import Popular from "./components/Popular";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
 import Experiences from "./components/Experiences";
@@ -10,6 +11,7 @@ import Trip from "./components/Trip";
 const App = () => {
   return (
     <div>
+      <Popular />
       <Gallery />
       <Hero />
       <Popular />
