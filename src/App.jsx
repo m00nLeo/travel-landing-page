@@ -5,23 +5,19 @@ import Experiences from "./components/Experiences";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Offer from "./components/Offer";
-import Popular from "./components/Popular";
 import Trip from "./components/Trip";
-import Nav from "./components/Nav";
 
 const App = () => {
   return (
     <div>
-      <Popular />
-      <Gallery />
       <Hero />
       <Popular />
       <Offer />
       <Blog />
       <Trip />
+      <Gallery />
       <Experiences />
       <Footer />
-      <Nav /> 
     </div>
   );
 };
